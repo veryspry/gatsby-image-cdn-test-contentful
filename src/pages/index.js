@@ -35,11 +35,11 @@ export const pageQuery = graphql`
         publishDate(formatString: "MMMM Do, YYYY")
         tags
         heroImage {
-          gatsbyImageData(
-            layout: FULL_WIDTH
+          gatsbyImageData: gatsbyImage(
+            fit: COVER
             placeholder: BLURRED
             width: 424
-            height: 212
+            aspectRatio: 3
           )
         }
         description {
